@@ -2,9 +2,9 @@ import React, { useContext, useRef, useState } from 'react';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faGoogle, faGithub } from '@fortawesome/free-brands-svg-icons';
 import { GithubAuthProvider, GoogleAuthProvider, getAuth, sendPasswordResetEmail, signInWithEmailAndPassword, signInWithPopup } from "firebase/auth";
-import app from '../firebase/firebase.config';
-import { UserInfoContext } from '../App';
 import { Link } from 'react-router-dom';
+import { app } from '../firebase/firebase.config';
+import { UserInfoContext } from '../App';
 
 const auth = getAuth(app);
 const Login = () => {
@@ -129,6 +129,9 @@ const Login = () => {
                     </div>
                     <div className='mt-5'>
                         <p className='text-center'>Don't have account? <Link to='/register' className='text-blue-500'> Register </Link>here</p>
+                    </div>
+                    <div className='mt-5'>
+                        <p className='text-center'>Or login using<Link to='/phone_verify' className='text-blue-500'> Phone Number </Link></p>
                     </div>
                 </div>
             </div>

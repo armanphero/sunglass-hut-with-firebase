@@ -3,7 +3,7 @@ import React, { useRef, useState } from 'react';
 import { Link } from 'react-router-dom';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faEyeSlash, faEye } from '@fortawesome/free-regular-svg-icons';
-import app from '../firebase/firebase.config';
+import { app } from '../firebase/firebase.config';
 
 const auth = getAuth(app);
 
