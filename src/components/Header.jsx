@@ -34,7 +34,7 @@ const Header = () => {
             </nav>
             {
                 openMenu &&
-                <div className='absolute top-2 w-full md:hidden'>
+                <div className='absolute top-2 w-full md:hidden z-10'>
                     <div className='text-blue-500 bg-white w-[95%] py-5 px-3 mx-auto shadow border border-gray-200'>
                         <FontAwesomeIcon icon={faXmark} className='md:hidden text-xl p-2 bg-blue-500 text-white rounded-sm cursor-pointer absolute right-6' onClick={() => setOpenMenu(!openMenu)} />
 
